@@ -47,7 +47,12 @@ class CrawlerController extends Controller
         // Verifica se foi informado a paginação
         $request->has('page') ? $page = '?page=' . $request->page : $page = '';
 
-        $parametros .= $request->tipo_veiculo;
+        if($request->tipo_veiculo) {
+            $parametros .= $request->tipo_veiculo;
+        } else {
+            $parametros .= 'carro';
+        }
+
 
         // Se não for informado a marca do veículo, faz a busca com base no tipo_veiculo
         if(!$request->marca_veiculo) {
