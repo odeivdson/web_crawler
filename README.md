@@ -155,3 +155,7 @@ Exemplo de consulta:
     "Message": "Registros localizados com sucesso"
 }
 ```
+
+### Testes via postman
+
+Após inicializar o ambiente com sucesso (http://127.0.0.1:8000), você pode utilizar o Postman importando o arquivo 'Web Crawler.postman_collection.json' que está na raiz do projeto ;)
