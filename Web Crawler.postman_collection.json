@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "4917818b-05b7-4e1f-959c-a779f1548d84",
+		"name": "Web Crawler",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Lista geral",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/lista?tipo_veiculo=carro&marca_veiculo=ford&modelo_veiculo=ecosport&versao_veiculo=titanium&ano_veiculo_min=2014&ano_veiculo_max=2019&preco_veiculo_min=1000&preco_veiculo_max=85960",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"lista"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "tipo_veiculo",
+							"value": "carro"
+						},
+						{
+							"key": "marca_veiculo",
+							"value": "ford"
+						},
+						{
+							"key": "modelo_veiculo",
+							"value": "ecosport"
+						},
+						{
+							"key": "versao_veiculo",
+							"value": "titanium"
+						},
+						{
+							"key": "ano_veiculo_min",
+							"value": "2014"
+						},
+						{
+							"key": "ano_veiculo_max",
+							"value": "2019"
+						},
+						{
+							"key": "preco_veiculo_min",
+							"value": "1000"
+						},
+						{
+							"key": "preco_veiculo_max",
+							"value": "85960"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Detalhe",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/detalhe?id_detalhe=ford-ecosport-titanium-2.0-16v-flex-5p-aut.-2.0-16v-5portas-2015--2722925",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"detalhe"
+					],
+					"query": [
+						{
+							"key": "id_detalhe",
+							"value": "ford-ecosport-titanium-2.0-16v-flex-5p-aut.-2.0-16v-5portas-2015--2722925"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
